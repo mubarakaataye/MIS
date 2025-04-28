@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="../src/output.css" />
+    <script src="app.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  </head>
+  <body class="bg-nav1 w-full text-white">
+    <!-- Top Bar (Contact Info) -->
+    <div class="flex justify-between h-12 bg-navg w-full leading-12 pl-3 text-sm sm:text-base">
+      <p>Call Us: +1 800 123 456 789 - Mail Us: Itcroc@mail.com</p>
+      <div class="flex">
+        <p>
+          <span class="material-symbols-outlined" style="font-size: 18px">location_on</span>
+          684 West College St. Sun City, USA
+        </p>
+        <img src="img/Screenshot 2025-04-19 101314.png" class="my-2" alt="" />
+      </div>
+    </div>
+    
+    <!-- Navbar -->
+    <div class="h-20 w-full bg-navar1 px-12 leading-20 flex justify-between items-center sm:px-6">
+      <!-- Logo and Menu -->
+      <div class="flex space-x-8 font-bold text-[20px] px-6">
+        <img src="img/logo_1.png" class="w-56 h-12" alt="" />
+        <ul class="flex space-x-4 hidden sm:flex">
+          <li class="relative group">
+            <a href="">Demos</a>
+            <span class="material-symbols-outlined mt-1" style="font-size: 19">stat_minus_1</span>
+            <div class="hidden group-hover:block">
+              <ul class="bg-navar1 w-[1000px] -ml-48 absolute top-14 h-32 justify-between items-center px-2 flex gap-3 ">
+                <li class="w-[50%] h-16 bg-navar1 rounded-b-lg hover:border-t-8 hover:border-t-butten shadow text-center shadow-gray-100">Light</li>
+                <li class="w-[50%] h-16 bg-navar1 rounded-b-lg hover:border-t-8 hover:border-t-butten shadow text-center shadow-gray-100">Dark</li>
+              </ul>
+            </div>
+          </li>
+          <li class="relative group">
+            <a href="">Pages</a>
+            <span class="material-symbols-outlined mt-2" style="font-size: 20px">stat_minus_1</span>
+            <div class="hidden group-hover:block">
+              <ul class="bg-navar1 w-[900px] absolute top-18 left-0 h-[90vh] rounded-b-lg">
+                <!-- Content inside Pages dropdown -->
+              </ul>
+            </div>
+          </li>
+          <li class="relative group">
+            <a href="">Courses</a>
+            <span class="material-symbols-outlined mt-1" style="font-size: 20px">stat_minus_1</span>
+            <div class="hidden group-hover:block">
+              <ul class="bg-navar1 w-[1000px] absolute top-18 -left-72 h-[110vh] rounded-b-lg">
+                <!-- Content inside Courses dropdown -->
+              </ul>
+            </div>
+          </li>
+          <li class="relative group">
+            <a href="">Dashboard</a>
+            <span class="material-symbols-outlined mt-1" style="font-size: 20px">stat_minus_1</span>
+            <ul class="h-56 w-52 bg-navar1 absolute top-20 hidden group-hover:block">
+              <li class="-mt-6 flex justify-between px-4 hover:bg-nav2 hover:border-l-4 hover:border-butten">Admin <span class="material-symbols-outlined mt-6">chevron_right</span></li>
+              <!-- More items -->
+            </ul>
+          </li>
+          <li class="relative group">
+            <a href="">eCommerce</a>
+            <span class="material-symbols-outlined mt-1" style="font-size: 20px">stat_minus_1</span>
+            <ul class="h-60 w-52 bg-navar1 absolute top-20 hidden group-hover:block">
+              <!-- Content inside eCommerce dropdown -->
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Right Section (Cart, User, Button) -->
+      <div class="flex space-x-6 leading-20 py-3">
+        <span class="material-symbols-outlined mt-3" style="font-size: 30px">shopping_cart</span>
+        <span class="material-symbols-outlined border rounded-[6px] w-12 text-center pt-2 h-12" style="font-size: 30px">person</span>
+        <button class="h-12 w-28 rounded-[6px] bg-butten text-center text-[18px] leading-12">Get Start</button>
+      </div>
+    </div>
+    <!-- Responsive Navbar for mobile -->
+    <div class="sm:hidden">
+      <div class="flex justify-between items-center p-4">
+        <img src="img/logo_1.png" class="w-40 h-10" alt="" />
+        <button id="menu-toggle" class="text-white">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+      </div>
+      <div id="mobile-menu" class="hidden">
+        <ul class="flex flex-col items-center space-y-4 bg-navar1 py-6">
+          <li><a href="">Demos</a></li>
+          <li><a href="">Pages</a></li>
+          <li><a href="">Courses</a></li>
+          <li><a href="">Dashboard</a></li>
+          <li><a href="">eCommerce</a></li>
+        </ul>
+      </div>
+    </div>
+    <script>
+      // Toggle mobile menu visibility
+      document.getElementById("menu-toggle").addEventListener("click", function() {
+        const menu = document.getElementById("mobile-menu");
+        menu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+<

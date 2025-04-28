@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="../fontawesome-free-5.15.4-web/css/all.min.css">
     <link rel="stylesheet" href="../src/output.css" />
     <script src="app.js" defer></script>
     <link
@@ -344,145 +345,371 @@
         </div>
       </div>
       <!-- vnav endedd -->
-      <div class="bg-vNav border-butten rounded-2xl w-[80%] h-[140vh] border">
+      <div class="bg-vNav border-butten rounded-2xl w-[80%] h-[180vh] border">
         <h1
           class="mt-12 font-bold text-3xl border-b border-b-butten pb-4 mx-auto w-[80%]"
         >
-          Dashboard
+          Wishlist
         </h1>
-        <div class="flex w-[90%] justify-between px-7 gap-4 mx-auto">
-          <div class="flex flex-col gap-3 w-[60%] mt-8">
-            <div
-              class="w-full h-52 border border-butten rounded-2xl flex justify-center space-x-4 items-center my-auto mx-auto"
-            >
-              <img src="img/counter__1.png" class="h-20 w-20" alt="" />
-              <div class="font-bold text-2xl">
-                <div class="flex"><h1 class="font-bold text-4xl">27</h1><span class="font-bold text-4xl">+</span></div>
-                <p>Enrolled Courses</p>
+        <div class="flex w-[100%] justify-between px-7 gap-4 mx-auto  ">
+          <div class="grid grid-cols-3 grid-rows-2 gap-3 w-[100%] mt-8  ">
+          <div class="flex flex-col gap-3 w-[280px] mt-8 shadow shadow-purple-700 p-2" >
+            <div class="p-15px bg-whiteColor shadow-brand dark:bg-darkdeep3-dark dark:shadow-brand-dark">
+              <!-- card image -->
+              <div class="relative mb-4">
+                <a href="#" class="w-full overflow-hidden rounded">
+                  <img src="../public/img/list1.png" alt="" class="w-full transition-all duration-300 group-hover:transform-view">
+                </a>
+                <div class="absolute left-0 top-1 flex justify-between w-full items-center px-2">
+                  <div>
+                    <p class="text-xs text-whiteColor px-4 py-[3px] bg-blue-700 rounded ">
+                      Mechanical
+                    </p>
+                  </div>
+                  <a class="text-white bg-black bg-opacity-15 rounded hover:bg-primaryColor" href="#">
+                    <i class="fas fa-heart bg-gray-300 text-base py-1 px-2"></i></a>
+                </div>
+              </div>
+              <!-- card content -->
+              <div>
+                <div class="grid grid-cols-2 mb-15px py-3">
+                  <div class="flex items-center">
+                    <div>
+                      <i class="fas fa-book pr-5px text-blue-900 text-lg"></i>
+                    </div>
+                    <div>
+                      <span class="text-sm text-white dark:text-blackColor-dark px-1">29 Lesson</span>
+                    </div>
+                  </div>
+                  <div class="flex items-center">
+                    <div>
+                      <i class="fas fa-clock pr-5px text-blue-900 text-lg"></i>
+                    </div>
+                    <div>
+                      <span class=" text-sm text-white dark:text-blackColor-dark px-2">2 hr 10 min</span>
+                    </div>
+                  </div>
+                </div>
+                <a href="#" class="text-lg font-semibold text-blackColor mb-10px font-hind dark:text-blackColor-dark hover:text-primaryColor dark:hover:text-primaryColor">
+                  Nidnies course to under stand about softwere
+                </a>
+                <!-- price -->
+                <div class="text-lg font-semibold text-purple-900 font-inter mb-4">
+                  $32.00
+                  <del class="text-sm text-gray-500 font-semibold">/ $67.00</del>
+                  <span class="ml-6"><del class="text-cyan-400 font-semibold text-greencolor">Free</del></span>
+                </div>
+                <!-- author and rating-->
+                <div class="grid grid-cols-1 md:grid-cols-2 pt-4 border-t border-borderColor">
+                  <div>
+                    <a href="#" class="text-base font-bold font-hind flex items-center hover:text-primaryColor dark:text-blackColor-dark dark:hover:text-primaryColor">
+                      <img class="w-[30px] h-[30px] rounded-full mr-2" src="../public/img/r1.jpg" alt="">Rinis Jhon
+                    </a>
+                  </div>
+                  <div class="text-start md:text-end">
+                    <i class="fas fa-star text-size-8 text-yellow-300"></i>
+                    <i class="fas fa-star text-size-8 text-yellow-300"></i>
+                    <i class="fas fa-star text-size-8 text-yellow-300"></i>
+                    <i class="fas fa-star text-size-8 text-yellow-300"></i>
+                    <i class="fas fa-star text-size-8 text-yellow-300"></i>
+                    
+                    
+                    <span class="text-xs text-gray-400">(44)</span>
+                  </div>
+                </div>
               </div>
             </div>
-            <div
-              class="w-full h-52 border border-butten rounded-2xl flex justify-center space-x-4 items-center my-auto mx-auto"
-            >
-              <img src="img/counter__3.png" class="h-20 w-20" alt="" />
-              <div class="font-bold text-2xl">
-                <div class="flex"><h1  id="counter" class="font-bold text-4xl">3k</h1><span class="font-bold text-4xl">k</span></div>
-                <p>Complete Courses</p>
-              </div>
             </div>
-            <div
-              class="w-full h-52 border border-butten rounded-2xl flex justify-center space-x-4 items-center my-auto mx-auto"
-            >
-              <img src="img/counter__3 (1).png" class="h-20 w-20" alt="" />
-              <div class="font-bold text-2xl">
-                <div class="flex"><h1 id="counter2" class="font-bold text-4xl">10k</h1><span class="font-bold text-4xl">k</span></div>
-                <p>Total Students</p>
+            <div class="flex flex-col gap-3 w-[280px] mt-8 shadow shadow-purple-700 p-2" >
+              <div class="p-15px bg-whiteColor shadow-brand dark:bg-darkdeep3-dark dark:shadow-brand-dark">
+                <!-- card image -->
+                <div class="relative mb-4">
+                  <a href="#" class="w-full overflow-hidden rounded">
+                    <img src="../public/img/list2.png" alt="" class="w-full transition-all duration-300 group-hover:transform-view">
+                  </a>
+                  <div class="absolute left-0 top-1 flex justify-between w-full items-center px-2">
+                    <div>
+                      <p class="text-xs text-whiteColor px-4 py-[3px] bg-red-500 rounded ">
+                        Development
+                      </p>
+                    </div>
+                    <a class="text-white bg-black bg-opacity-15 rounded hover:bg-primaryColor" href="#">
+                      <i class="fas fa-heart bg-gray-300 text-base py-1 px-2"></i></a>
+                  </div>
+                </div>
+                <!-- card content -->
+                <div>
+                  <div class="grid grid-cols-2 mb-15px py-3">
+                    <div class="flex items-center">
+                      <div>
+                        <i class="fas fa-book pr-5px text-blue-900 text-lg"></i>
+                      </div>
+                      <div>
+                        <span class="text-sm text-white dark:text-blackColor-dark px-1">25 Lesson</span>
+                      </div>
+                    </div>
+                    <div class="flex items-center">
+                      <div>
+                        <i class="fas fa-clock pr-5px text-blue-900 text-lg"></i>
+                      </div>
+                      <div>
+                        <span class=" text-sm text-white dark:text-blackColor-dark px-2">1 hr 40 min</span>
+                      </div>
+                    </div>
+                  </div>
+                  <a href="#" class="text-lg font-semibold text-blackColor mb-10px font-hind dark:text-blackColor-dark hover:text-primaryColor dark:hover:text-primaryColor">
+                    Minws course to under stand about solution
+                  </a>
+                  <!-- price -->
+                  <div class="text-lg font-semibold text-purple-900 font-inter mb-4">
+                    $32.00
+                    <del class="text-sm text-gray-500 font-semibold">/ $67.00</del>
+                    <span class="ml-6"><del class="text-red-500 font-semibold text-greencolor">Free</del></span>
+                  </div>
+                  <!-- author and rating-->
+                  <div class="grid grid-cols-1 md:grid-cols-2 pt-4 border-t border-borderColor">
+                    <div>
+                      <a href="#" class="text-base font-bold font-hind flex items-center hover:text-primaryColor dark:text-blackColor-dark dark:hover:text-primaryColor">
+                        <img class="w-[30px] h-[30px] rounded-full mr-2" src="../public/img/r2.jpg" alt="">Micle Jhon
+                      </a>
+                    </div>
+                    <div class="text-start md:text-end">
+                      <i class="fas fa-star text-size-8 text-yellow-300"></i>
+                      <i class="fas fa-star text-size-8 text-yellow-300"></i>
+                      <i class="fas fa-star text-size-8 text-yellow-300"></i>
+                      <i class="fas fa-star text-size-8 text-yellow-300"></i>
+                      <i class="fas fa-star text-size-8 text-yellow-300"></i>
+                      
+                      
+                      <span class="text-xs text-gray-400">(44)</span>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="flex flex-col gap-3 w-[60%] mt-8">
-            <div
-              class="w-full h-52 border border-butten rounded-2xl flex justify-center space-x-4 items-center my-auto mx-auto"
-            >
-              <img src="img/counter__2.png" class="h-20 w-20" alt="" />
-              <div class="font-bold text-2xl">
-                <div class="flex"><h1 id="counter3" class="font-bold text-4xl">8+</h1><span class="font-bold text-4xl">+</span></div>
-                <p>Active Courses</p>
               </div>
-            </div>
-            <div
-              class="w-full h-52 border border-butten rounded-2xl flex justify-center space-x-4 items-center my-auto mx-auto"
-            >
-              <img src="img/counter__4.png" class="h-20 w-20" alt="" />
-              <div class="font-bold text-2xl">
-                <div class="flex"><h1 id="counter4" class="font-bold text-4xl">8+</h1><span class="font-bold text-4xl">+</span></div>
-                <p>Total Courses</p>
-              </div>
-            </div>
-            <div
-              class="w-full h-52 border border-butten rounded-2xl flex justify-center items-center space-x-4 my-auto mx-auto"
-            >
-              <img src="img/counter__4 (1).png" class="h-20 w-20" alt="" />
-              <div class="font-bold text-2xl">
-                <div class="flex"><h1 id="counter5" class="font-bold text-4xl">
-                  24,000+</h1><span class="font-bold text-4xl">+</span></div>
-                <p>Total Earning</p>
-              </div>
-            </div>
-          </div>
+           
+
+              <div class="flex flex-col gap-3 w-[280px] mt-8 shadow shadow-purple-700 p-2" >
+                <div class="p-15px bg-whiteColor shadow-brand dark:bg-darkdeep3-dark dark:shadow-brand-dark">
+                  <!-- card image -->
+                  <div class="relative mb-4">
+                    <a href="#" class="w-full overflow-hidden rounded">
+                      <img src="../public/img/list2.png" alt="" class="w-full transition-all duration-300 group-hover:transform-view">
+                    </a>
+                    <div class="absolute left-0 top-1 flex justify-between w-full items-center px-2">
+                      <div>
+                        <p class="text-xs text-whiteColor px-4 py-[3px] bg-red-500 rounded ">
+                          Development
+                        </p>
+                      </div>
+                      <a class="text-white bg-black bg-opacity-15 rounded hover:bg-primaryColor" href="#">
+                        <i class="fas fa-heart bg-gray-300 text-base py-1 px-2"></i></a>
+                    </div>
+                  </div>
+                  <!-- card content -->
+                  <div>
+                    <div class="grid grid-cols-2 mb-15px py-3">
+                      <div class="flex items-center">
+                        <div>
+                          <i class="fas fa-book pr-5px text-blue-900 text-lg"></i>
+                        </div>
+                        <div>
+                          <span class="text-sm text-white dark:text-blackColor-dark px-1">25 Lesson</span>
+                        </div>
+                      </div>
+                      <div class="flex items-center">
+                        <div>
+                          <i class="fas fa-clock pr-5px text-blue-900 text-lg"></i>
+                        </div>
+                        <div>
+                          <span class=" text-sm text-white dark:text-blackColor-dark px-2">1 hr 40 min</span>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#" class="text-lg font-semibold text-blackColor mb-10px font-hind dark:text-blackColor-dark hover:text-primaryColor dark:hover:text-primaryColor">
+                      Minws course to under stand about solution
+                    </a>
+                    <!-- price -->
+                    <div class="text-lg font-semibold text-purple-900 font-inter mb-4">
+                      $32.00
+                      <del class="text-sm text-gray-500 font-semibold">/ $67.00</del>
+                      <span class="ml-6"><del class="text-red-500 font-semibold text-greencolor">Free</del></span>
+                    </div>
+                    <!-- author and rating-->
+                    <div class="grid grid-cols-1 md:grid-cols-2 pt-4 border-t border-borderColor">
+                      <div>
+                        <a href="#" class="text-base font-bold font-hind flex items-center hover:text-primaryColor dark:text-blackColor-dark dark:hover:text-primaryColor">
+                          <img class="w-[30px] h-[30px] rounded-full mr-2" src="../public/img/r2.jpg" alt="">Micle Jhon
+                        </a>
+                      </div>
+                      <div class="text-start md:text-end">
+                        <i class="fas fa-star text-size-8 text-yellow-300"></i>
+                        <i class="fas fa-star text-size-8 text-yellow-300"></i>
+                        <i class="fas fa-star text-size-8 text-yellow-300"></i>
+                        <i class="fas fa-star text-size-8 text-yellow-300"></i>
+                        <i class="fas fa-star text-size-8 text-yellow-300"></i>
+                        
+                        
+                        <span class="text-xs text-gray-400">(44)</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+        
+          
+
+                <div class="flex flex-col gap-3 w-[280px] mt-8 shadow shadow-purple-700 p-2" >
+                  <div class="p-15px bg-whiteColor shadow-brand dark:bg-darkdeep3-dark dark:shadow-brand-dark">
+                    <!-- card image -->
+                    <div class="relative mb-4">
+                      <a href="#" class="w-full overflow-hidden rounded">
+                        <img src="../public/img/list3.png" alt="" class="w-full transition-all duration-300 group-hover:transform-view">
+                      </a>
+                      <div class="absolute left-0 top-1 flex justify-between w-full items-center px-2">
+                        <div>
+                          <p class="text-xs text-whiteColor px-4 py-[3px] bg-red-600 rounded ">
+                            Date & Tech
+                          </p>
+                        </div>
+                        <a class="text-white bg-black bg-opacity-15 rounded hover:bg-primaryColor" href="#">
+                          <i class="fas fa-heart bg-gray-300 text-base py-1 px-2"></i></a>
+                      </div>
+                    </div>
+                    <!-- card content -->
+                    <div>
+                      <div class="grid grid-cols-2 mb-15px py-3">
+                        <div class="flex items-center">
+                          <div>
+                            <i class="fas fa-book pr-5px text-blue-900 text-lg"></i>
+                          </div>
+                          <div>
+                            <span class="text-sm text-white dark:text-blackColor-dark px-1">36 Lesson</span>
+                          </div>
+                        </div>
+                        <div class="flex items-center">
+                          <div>
+                            <i class="fas fa-clock pr-5px text-blue-900 text-lg"></i>
+                          </div>
+                          <div>
+                            <span class=" text-sm text-white dark:text-blackColor-dark px-2">3 hr 40 min</span>
+                          </div>
+                        </div>
+                      </div>
+                      <a href="#" class="text-lg font-semibold text-blackColor mb-10px font-hind dark:text-blackColor-dark hover:text-primaryColor dark:hover:text-primaryColor">
+                        Date course to under stand about solution
+                      </a>
+                      <!-- price -->
+                      <div class="text-lg font-semibold text-purple-900 font-inter mb-4">
+                        $40.00
+                        <del class="text-sm text-gray-500 font-semibold">/ $67.00</del>
+                        <span class="ml-6"><del class="text-red-500 font-semibold text-greencolor">Free</del></span>
+                      </div>
+                      <!-- author and rating-->
+                      <div class="grid grid-cols-1 md:grid-cols-2 pt-4 border-t border-borderColor">
+                        <div>
+                          <a href="#" class="text-base font-bold font-hind flex items-center hover:text-primaryColor dark:text-blackColor-dark dark:hover:text-primaryColor">
+                            <img class="w-[30px] h-[30px] rounded-full mr-2" src="../public/img/r3.jpg" alt="">Micle Jhon
+                          </a>
+                        </div>
+                        <div class="text-start md:text-end">
+                          <i class="fas fa-star text-size-8 text-yellow-300"></i>
+                          <i class="fas fa-star text-size-8 text-yellow-300"></i>
+                          <i class="fas fa-star text-size-8 text-yellow-300"></i>
+                          <i class="fas fa-star text-size-8 text-yellow-300"></i>
+                          <i class="fas fa-star text-size-8 text-yellow-300"></i>
+                          
+                          
+                          <span class="text-xs text-gray-400">(44)</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+
+
+
+                  <div class="flex flex-col gap-3 w-[280px] mt-8 shadow shadow-purple-700 p-2" >
+                    <div class="p-15px bg-whiteColor shadow-brand dark:bg-darkdeep3-dark dark:shadow-brand-dark">
+                      <!-- card image -->
+                      <div class="relative mb-4">
+                        <a href="#" class="w-full overflow-hidden rounded">
+                          <img src="../public/img/list4.png" alt="" class="w-full transition-all duration-300 group-hover:transform-view">
+                        </a>
+                        <div class="absolute left-0 top-1 flex justify-between w-full items-center px-2">
+                          <div>
+                            <p class="text-xs text-whiteColor px-4 py-[3px] bg-green-400 rounded ">
+                              Ui & Ux Desgin
+                            </p>
+                          </div>
+                          <a class="text-white bg-black bg-opacity-15 rounded hover:bg-primaryColor" href="#">
+                            <i class="fas fa-heart bg-gray-300 text-base py-1 px-2"></i></a>
+                        </div>
+                      </div>
+                      <!-- card content -->
+                      <div>
+                        <div class="grid grid-cols-2 mb-15px py-3">
+                          <div class="flex items-center">
+                            <div>
+                              <i class="fas fa-book pr-5px text-blue-900 text-lg"></i>
+                            </div>
+                            <div>
+                              <span class="text-sm text-white dark:text-blackColor-dark px-1">36 Lesson</span>
+                            </div>
+                          </div>
+                          <div class="flex items-center">
+                            <div>
+                              <i class="fas fa-clock pr-5px text-blue-900 text-lg"></i>
+                            </div>
+                            <div>
+                              <span class=" text-sm text-white dark:text-blackColor-dark px-2">3 hr 40 min</span>
+                            </div>
+                          </div>
+                        </div>
+                        <a href="#" class="text-lg font-semibold text-blackColor mb-10px font-hind dark:text-blackColor-dark hover:text-primaryColor dark:hover:text-primaryColor">
+                          Desgin course to under stand about solution
+                        </a>
+                        <!-- price -->
+                        <div class="text-lg font-semibold text-purple-900 font-inter mb-4">
+                          $32.00
+                          <del class="text-sm text-gray-500 font-semibold">/ $67.00</del>
+                          <span class="ml-6"><del class="text-red-500 font-semibold text-greencolor">Free</del></span>
+                        </div>
+                        <!-- author and rating-->
+                        <div class="grid grid-cols-1 md:grid-cols-2 pt-4 border-t border-borderColor">
+                          <div>
+                            <a href="#" class="text-base font-bold font-hind flex items-center hover:text-primaryColor dark:text-blackColor-dark dark:hover:text-primaryColor">
+                              <img class="w-[30px] h-[30px] rounded-full mr-2" src="../public/img/r4.jpg" alt="">Micle Robin
+                            </a>
+                          </div>
+                          <div class="text-start md:text-end">
+                            <i class="fas fa-star text-size-8 text-yellow-300"></i>
+                            <i class="fas fa-star text-size-8 text-yellow-300"></i>
+                            <i class="fas fa-star text-size-8 text-yellow-300"></i>
+                            <i class="fas fa-star text-size-8 text-yellow-300"></i>
+                            <i class="fas fa-star text-size-8 text-yellow-300"></i>
+                            
+                            
+                            <span class="text-xs text-gray-400">(44)</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
         </div>
-        <div
-          class="bg-vNav h-[80vh] rounded-2xl border border-butten w-full mt-32"
-        >
-          <div
-            class="mt-12 border-b border-b-butten pb-4 mx-auto w-[80%] flex justify-between"
-          >
-            <h1 class="font-bold text-3xl">Dashboard</h1>
-            <p class="text-2xl">Learn more....</p>
-          </div>
-          <div class="flex space-x-24 mt-11 justify-center items-center">
-            <ul
-              class="flex flex-col gap-5 font-bold items-center justify-center"
-            >
-              <li class="text-2xl">Course Name</li>
-              <li>Javascript</li>
-              <li>PHP</li>
-              <li>HTML</li>
-              <li>grAPHIC</li>
-            </ul>
-            <ul
-              class="flex flex-col gap-5 font-bold items-center justify-center"
-            >
-              <li class="text-2xl">Enrolled</li>
-              <li>1100</li>
-              <li>700</li>
-              <li>1350</li>
-              <li>1266</li>
-            </ul>
-            <ul
-              class="flex flex-col mt-2 text-amber-600 gap-5 font-bold items-center justify-center"
-            >
-              <li class="text-2xl text-white">Rating</li>
-              <li>
-                <span class="material-symbols-outlined"> star </span>
-                <span class="material-symbols-outlined"> star </span>
-                <span class="material-symbols-outlined"> star </span>
-                <span class="material-symbols-outlined"> star </span>
-                <span class="material-symbols-outlined"> star </span>
-              </li>
-              <li>
-                <span class="material-symbols-outlined"> star </span>
-                <span class="material-symbols-outlined"> star </span>
-                <span class="material-symbols-outlined"> star </span>
-                <span class="material-symbols-outlined"> star </span>
-                <span class="material-symbols-outlined"> star </span>
-              </li>
-              <li>
-                <span class="material-symbols-outlined"> star </span>
-                <span class="material-symbols-outlined"> star </span>
-                <span class="material-symbols-outlined"> star </span>
-                <span class="material-symbols-outlined"> star </span>
-                <span class="material-symbols-outlined"> star </span>
-              </li>
-              <li>
-                <span class="material-symbols-outlined"> star </span>
-                <span class="material-symbols-outlined"> star </span>
-                <span class="material-symbols-outlined"> star </span>
-                <span class="material-symbols-outlined"> star </span>
-                <span class="material-symbols-outlined"> star </span>
-              </li>
-            </ul>
-          </div>
         </div>
+      </div>
+       
       </div>
     </div>
     <!-- endedd -->
-    <!-- footer stard -->
-    <footer class="h-screen bg-vNav">
+     <!-- footer stard -->
+      
+    <footer class=" mt-0 h-screen bg-vNav">
       <div
         class="border-b border-b-butten pb-4 mx-auto w-[80%] h-36 flex justify-between px-5"
       >
-        <img src="img/logo_2.png" class="h-20 w-44 my-10" alt="" />
+        <img src="../public/img/logo_1.png" class="h-20 w-44 my-10" alt="" />
         <div class="leading-36 h-36">
           <input
             type="text"
@@ -556,3 +783,4 @@
     <!-- Footer ended -->
   </body>
 </html>
+   
