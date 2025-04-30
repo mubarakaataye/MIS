@@ -682,6 +682,9 @@
   .border-butten {
     border-color: var(--color-butten);
   }
+  .border-gray-300 {
+    border-color: var(--color-gray-300);
+  }
   .border-white {
     border-color: var(--color-white);
   }
