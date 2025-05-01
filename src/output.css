@@ -947,6 +947,9 @@
   .text-black {
     color: var(--color-black);
   }
+  .text-blue-500 {
+    color: var(--color-blue-500);
+  }
   .text-blue-900 {
     color: var(--color-blue-900);
   }
