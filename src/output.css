@@ -1012,6 +1012,9 @@
   .text-gray-800 {
     color: var(--color-gray-800);
   }
+  .text-green-500 {
+    color: var(--color-green-500);
+  }
   .text-purple-900 {
     color: var(--color-purple-900);
   }
