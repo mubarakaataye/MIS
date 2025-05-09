@@ -1202,6 +1202,17 @@
       }
     }
   }
+  .hover\:hover\:border-green-500 {
+    &:hover {
+      @media (hover: hover) {
+        &:hover {
+          @media (hover: hover) {
+            border-color: var(--color-green-500);
+          }
+        }
+      }
+    }
+  }
   .hover\:border-t-butten {
     &:hover {
       @media (hover: hover) {
