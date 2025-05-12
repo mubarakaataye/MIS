@@ -1,50 +1,73 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="fa">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>داشبورد مدیر</title>
-    <link rel="stylesheet" href="../src/output.css">
-    <style>
-        .card-hover:hover{
-            transform: translateY(-6px) scale(1.02);
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>داشبورد مدیر</title>
+ <link rel="stylesheet" href="../src/output.css">
+  <style>
+    .card-hover:hover {
+      transform: translateY(-6px) scale(1.02);
+    }
+  </style>
 </head>
-<body class="bg-gradient-to-tr from-gray-100 to-white min-h-screen font-sans text-gray-800">
-    <header class="bg-white shadow-sm py-5 px-8 flex justify-between items-center">
-        <h1 class="text-2xl font-bold text-blue-600 animate-fade-in">سیستم مدیریت کورس</h1>
-    <button class="bg-red-100 text-red-500 px-4 py-1 rounded-full text-sm hover:bg-red-200 transition">خروج</button></header>
-    <main class="p-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
-        <a href="student-management.html" class="card-hover group bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-xl hover:not-first:border-blue-500
-        transition duration-300 transform-gpu">
-    <div class="text-xl font-semibold text-blue-500 group-hover:text-blue-600 mb-2">مدیریت شاگردان</div>
-<p class="text-sm text-gray-500">اضافه کردن,تغیر دادن و حذف شاگردان.</p></a>
-<a href="teacher-management.html" class="card-hover group bg-white border border-gray-200 
-rounded-2xl p-6 shadow-sm hover:shadow-xl hover:border-green-500 transition duration-300 transform-gpu">
-<div class="text-xl font-semibold text-green-500 group-hover:text-green-600 mb-2">مدیریت استادان</div>
-<p class="text-sm text-gray-500">مدیریت اصلاعات استادان</p></a>
+<body class="bg-gradient-to-tr from-gray-100 to-white min-h-screen font-sans text-gray-800 flex flex-col justify-between">
 
-<a href="course-management.html" class="card-hover group bg-white border border-gray-200
-rounded-2xl p-6 shadow-sm hover:shadow-xl hover:border-green-500 transition duration-300 transform-gpu">
-<div class="text-xl font-semibold text-green-500 group-hover:text-green-600 mb-2">مدیریت دروس</div>
-<p class="text-sm text-gray-500">تعریف و تنظیم دروس</p>
-</a>
-<a href="schdule.html" class="card-hover group bg-white border border-gray-200
-rounded-2xl p-6 shadow-sm hover:shadow-xl hover:border-green-500 transition duration-300 transform-gpu">
-<div class="text-xl font-semibold text-green-500 group-hover:text-green-600 mb-2">برنامه زمانی</div>
-<p class="text-sm text-gray-500">مدیریت زمان کلاس ها</p>
-</a>
-<a href="grads.html" class="card-hover group bg-white border border-gray-200
-rounded-2xl p-6 shadow-sm hover:shadow-xl hover:border-green-500 transition duration-300 transform-gpu">
-<div class="text-xl font-semibold text-green-500 group-hover:text-green-600 mb-2">سیستم نمرات</div>
-<p class="text-sm text-gray-500">وارد کردن و مشاهده نمرات</p>
-</a>
-<a href="reports.html" class="card-hover group bg-white border border-gray-200
-rounded-2xl p-6 shadow-sm hover:shadow-xl hover:border-green-500 transition duration-300 transform-gpu">
-<div class="text-xl font-semibold text-green-500 group-hover:text-green-600 mb-2">گذارش ها</div>
-<p class="text-sm text-gray-500">نمایش گذارش های مهم</p>
-</a>
-    </main>
+  <!-- هدر -->
+  <header class="bg-white shadow-sm py-5 px-8 flex justify-between items-center">
+    <h1 class="text-2xl font-bold text-blue-600">سیستم مدیریت کورس</h1>
+    <button class="bg-red-100 text-red-500 px-4 py-1 rounded-full text-sm hover:bg-red-200 transition">خروج</button>
+  </header>
+
+  <!-- محتوای اصلی -->
+  <main class="p-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto flex-1">
+
+    <!-- کارت‌ها -->
+    <a href="student_management.html" class="card-hover group bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-xl hover:border-blue-500 transition duration-300 transform-gpu">
+      <div class="text-xl font-semibold text-blue-500 group-hover:text-blue-600 mb-2">مدیریت شاگردان</div>
+      <p class="text-sm text-gray-500">اضافه‌کردن، ویرایش و حذف شاگردان.</p>
+    </a>
+
+    <a href="teacher_management.html" class="card-hover group bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-xl hover:border-green-500 transition duration-300 transform-gpu">
+      <div class="text-xl font-semibold text-green-500 group-hover:text-green-600 mb-2">مدیریت استادان</div>
+      <p class="text-sm text-gray-500">مدیریت اطلاعات استادان.</p>
+    </a>
+
+    <a href="course_management.html" class="card-hover group bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-xl hover:border-purple-500 transition duration-300 transform-gpu">
+      <div class="text-xl font-semibold text-purple-500 group-hover:text-purple-600 mb-2">مدیریت دروس</div>
+      <p class="text-sm text-gray-500">تعریف و تنظیم دروس.</p>
+    </a>
+
+    <a href="schedule.html" class="card-hover group bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-xl hover:border-yellow-500 transition duration-300 transform-gpu">
+      <div class="text-xl font-semibold text-yellow-500 group-hover:text-yellow-600 mb-2">برنامه زمانی</div>
+      <p class="text-sm text-gray-500">مدیریت زمان کلاس‌ها.</p>
+    </a>
+
+    <a href="grades.html" class="card-hover group bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-xl hover:border-red-500 transition duration-300 transform-gpu">
+      <div class="text-xl font-semibold text-red-500 group-hover:text-red-600 mb-2">سیستم نمرات</div>
+      <p class="text-sm text-gray-500">وارد کردن و مشاهده نمرات.</p>
+    </a>
+
+    <a href="reports.html" class="card-hover group bg-white border border-gray-200 rounded-2xl p-6 shadow-sm hover:shadow-xl hover:border-indigo-500 transition duration-300 transform-gpu">
+      <div class="text-xl font-semibold text-indigo-500 group-hover:text-indigo-600 mb-2">گزارش‌ها</div>
+      <p class="text-sm text-gray-500">نمایش گزارش‌های مهم.</p>
+    </a>
+
+  </main>
+
+  <!-- فوتر -->
+  <footer class="bg-blue-600 text-white py-4 mt-10">
+    <div class="container mx-auto text-center">
+      <p class="text-sm">تمامی حقوق محفوظ است © 2025 - سیستم مدیریت کورس</p>
+      <div class="flex justify-center mt-2 space-x-4">
+        <a href="#" class="hover:text-gray-300">تماس با ما</a>
+        <span>|</span>
+        <a href="#" class="hover:text-gray-300">درباره ما</a>
+        <span>|</span>
+        <a href="#" class="hover:text-gray-300">حریم خصوصی</a>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
