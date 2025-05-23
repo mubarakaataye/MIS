@@ -457,6 +457,9 @@
   .h-\[250vh\] {
     height: 250vh;
   }
+  .h-full {
+    height: 100%;
+  }
   .h-screen {
     height: 100vh;
   }
