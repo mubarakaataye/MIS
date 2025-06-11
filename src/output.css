@@ -542,6 +542,9 @@
   .max-w-7xl {
     max-width: var(--container-7xl);
   }
+  .min-w-full {
+    min-width: 100%;
+  }
   .flex-1 {
     flex: 1;
   }
